@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA 1 JAVASCRIPT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">
+                <img src="img/Cecyto.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                PRACTICA 1 JAVASCRIPT
+            </a>
+        </div>
+    </nav>
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col d-flex flex-column align-items-start">
+                <button class="btn btn-danger my-3" onclick="mensaje1()">
+                    <i class="bi bi-trash"></i> Eliminar
+                </button>
+                <button class="btn btn-info text-white my-3" onclick="mensaje2()">
+                    <i class="bi bi-cloud-arrow-up"></i> Cargar
+                </button>
+                <button class="btn btn-secondary my-3" onclick="mensaje3()">
+                    <i class="bi bi-download"></i> Descargar
+                </button>
+                <button class="btn btn-outline-success my-3" onclick="mensaje4()">
+                    <i class="bi bi-shield-check"></i> Verificar
+                </button>
+                <button class="btn btn-dark my-3" onclick="mensaje5()">
+                    <i class="bi bi-lock"></i> Cerrar Sesión
+                </button>
+            </div>
+            <div class="col d-flex flex-column align-items-start">
+                <button class="btn btn-warning text-dark my-3" onclick="mensaje6()">
+                    <i class="bi bi-arrow-repeat"></i> Actualizar
+                </button>
+                <button class="btn btn-primary my-3" onclick="mensaje7()">
+                    <i class="bi bi-pencil-square"></i> Editar
+                </button>
+                <button class="btn btn-outline-danger my-3" onclick="mensaje8()">
+                    <i class="bi bi-bug"></i> Reportar Error
+                </button>
+                <button class="btn btn-outline-warning text-dark my-3" onclick="mensaje9()">
+                    <i class="bi bi-key"></i> Clave
+                </button>
+                <button class="btn btn-success my-3" onclick="mensaje10()">
+                    <i class="bi bi-cart-check"></i> Comprar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function mensaje1() {
+            Swal.fire({
+                title: "Éxito",
+                text: "El registro se eliminó correctamente",
+                icon: "success"
+            });
+        }
+
+        function mensaje2() {
+            Swal.fire({
+                title: "Archivo Subido",
+                text: "El documento se cargó en la nube",
+                icon: "success"
+            });
+        }
+
+        function mensaje3() {
+            Swal.fire({
+                title: "Descarga Iniciada",
+                text: "Tu archivo se guardará en breve",
+                icon: "info"
+            });
+        }
+
+        function mensaje4() {
+            Swal.fire({
+                title: "Verificado",
+                text: "La cuenta cumple con la seguridad necesaria",
+                icon: "success"
+            });
+        }
+
+        function mensaje5() {
+            Swal.fire({
+                title: "Sesión Finalizada",
+                text: "Has salido de tu cuenta correctamente",
+                icon: "question"
+            });
+        }
+
+        function mensaje6() {
+            Swal.fire({
+                title: "Procesando",
+                text: "Se están actualizando los datos de la lista",
+                icon: "info"
+            });
+        }
+
+        function mensaje7() {
+            Swal.fire({
+                title: "Edición Lista",
+                text: "Los cambios fueron guardados con éxito",
+                icon: "success"
+            });
+        }
+
+        function mensaje8() {
+            Swal.fire({
+                title: "Reporte Enviado",
+                text: "El equipo técnico revisará la falla",
+                icon: "warning"
+            });
+        }
+
+        function mensaje9() {
+            Swal.fire({
+                title: "Acceso Denegado",
+                text: "Necesitas ingresar una clave válida",
+                icon: "error"
+            });
+        }
+
+        function mensaje10() {
+            Swal.fire({
+                title: "Compra Realizada",
+                text: "Gracias por tu orden en nuestra tienda",
+                icon: "success"
+            });
+        }
+    </script>
+</body>
+</html>
