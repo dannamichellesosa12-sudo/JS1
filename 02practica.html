@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <title>PRACTICAS JAVASCRIPT</title>
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Cecyto.png" width="30" height="24" class="d-inline-block align-text-top">
+                PRACTICAS JAVASCRIPT
+            </a>
+        </div>
+    </nav>
+
+    <div class="container p-4 bg-info mt-5 card">
+        <h1 class="text-center">PRACTICA 2</h1><hr>
+        <h2 class="text-center">CALCULADORA</h2><br>
+        <h5 id="valorNumeroA">NÚMERO 1</h5>
+        <input type="range" class="form-control" id="numeroA" min="1" max="100" value="1">
+        <h5 id="valorNumeroB">NÚMERO 2</h5>
+        <input type="range" class="form-control" id="numeroB" min="1" max="100" value="1">
+        <h5>SELECCIONAR OPERACIÓN</h5>
+        <select class="form-select" id="operacion">
+            <option value="suma">SUMAR</option>
+            <option value="resta">RESTAR</option>
+            <option value="multiplica">MULTIPLICAR</option>
+            <option value="divide">DIVIDIR</option>
+            <option value="modulo">MÓDULO</option>
+            <option value="potencia">POTENCIA</option>
+        </select>
+        <h2 class="text-center mt-5 bg-danger card" id="resultado">RESULTADO </h2><br>
+    </div>
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/02app.js"></script>
+
+    <center>
+        <video width="640" height="360" controls>
+            <source src="VJS1.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta video.
+        </video>
+    </center>
+
+</body>
+</html>
